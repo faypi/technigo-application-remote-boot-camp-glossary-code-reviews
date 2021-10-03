@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Solution for Technigo Coding Challenge</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <img
+        src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/511/original/technigo-logo.png"
+        width="100px" target="_blank">
+    </div>
+    <nav class="topnav">
+      <ul>
+        <li> <a href="#target1">What is code reviews?</a></li>
+        <li><a href="#target2">Tips for reviewing code</a></li>
+        <li> <a href="#target3">Pull requests & Code reviews</a></li>
+        <li><a href="#target4">Commenting your code</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="slice"></div>
+  <div class="main-container">
+    <div class='item1'>
+      <h1><a id="target1"></a>What is code reviews?</h1>
+      <p class="test">
+        A code review — also known as a peer code review — involves one or more team members checking another teammate's
+        work. This involves viewing changes made to the source code before they are implemented into the codebase.
+      </p>
+      <p>
+        Code reviews are important because they improve code quality and make your codebase more stable. In addition,
+        they
+        help programmers build relationships and work together more effectively.
+      </p>
+      <img
+        src="https://res.cloudinary.com/dukp6c7f7/image/upload/f_auto,fl_lossy,q_auto/s3-ghost//2019/12/Code-Review-Meme.jpg"
+        alt="funny meme for technigo task">
+      <h2><a id="target2"></a>Tips for reviewing code</h2>
+      <p>Reviewing code when you’re starting at a company can feel daunting, but it is a great way to learn more about a
+        piece of code and expand your knowledge of an overall system. You might not know enough about the code you’re
+        reviewing to recognize anything that could or should be changed, but there are multiple benefits to reviewing
+        code, especially as a junior developer:
+        <ul class="no-bullets">
+          <li>💡Learning the code base</li>
+          <li>🧑‍🤝‍🧑Building a feedback circle</li>
+          <li>🏅Being an owner.</li>
+        </ul>
+        <p>Here are a few things you can do when reviewing even the most unfamiliar code:</p>
+        <ul>
+          <li><b>Ask what the code is doing.</b> Take the time to understand the code and read it line-by-line. If you
+            come across something you don’t understand, look it up or sift through README’s and any other documentation.
+            There may be no such thing as a “bad question”, but there are lazy ones. If you still don’t understand
+            something after doing your due diligence, ask the code author if she can explain the line(s).</li>
+          <li><b>Ask why the code is written the way it is.</b> You might understand what is happening, but why is it
+            implemented that way? Why is the variable/function named that way? Why is that a list rather than a set?
+            Does it make sense? Is there a better way? Writing code requires a lot of decisions and it’s easy for the
+            author to overlook small things while he’s focusing on getting the code to work. An extra set of eyes asking
+            “why?” can help the author identify things they’ve missed.</li>
+          <li><b>Practice good etiquette.</b> Reviewing someone’s work is a personal process, and criticism
+            (constructive or not) can be difficult to digest. Help the author out by softening your request/comment,
+            whether it’s a fact or opinion. A few strategies for doing this:
+            <ol>
+              <li>Frame suggestions as questions. “Maybe it would be better if…”, “What if this was done this way…”, “Do
+                you think it might be better if…”.</li>
+              <li>Keep it impersonal. Don’t say, “I think you did this wrong” or, “You could’ve done this better by…”.
+                Instead, say, “I’m not sure this is correct” or, “I think this could be better”. Generally, leave out
+                the word “you”.</li>
+              <li>Only block a pull request if you think there will be a bug. Don’t block pull requests because of an
+                opinion.</li>
+              <li>Be polite. We’re all busy adults, but “please” and “thank you” still go a long way. Whether you’re
+                reviewing code, or asking for a review, being appreciative for someone else’s time and effort is always
+                a good idea.</li>
+            </ol>
+        </ul>
+      </p>
+
+      <h2><a id="target3"></a>Pull requests & Code reviews</h2>
+      <p>Code review and collaboration are at the core of pull requests. Pull requests provide you with a method for
+        requesting code reviews from your colleagues and checking build status based on your most recent commit.
+        Depending on your role, you may be an author, a reviewer, or both on one or more pull requests. The following is
+        an illustration of how the end-to-end pull request process works.</p>
+      <figure>
+        <img src="https://i.imgur.com/PKk7tWp.png" width="500px" alt="Elephant at sunset">
+        <figcaption>Image courtesy of
+          <a href="https://support.atlassian.com/bitbucket-cloud/docs/use-pull-requests-for-code-review/">BitBucket</a>
+        </figcaption>
+      </figure>
+      <h2><a id="target4"></a>Commenting your code</h2>
+      <p>In programming, we rarely come across problems that can only be solved in one, specific way. Your comments in
+        code review result from the experience or knowledge you have gained. So when suggesting changes to the code,
+        it’s usually good to write not only what you want to be corrected, but also why you think so. It is about the
+        simple argumentation of your position.</p>
+      <blockquote>Commenting is the “art” of describing what your code is going to do in “high level” English
+        statements.</blockquote>
+      <p>Well, This writing will show you how code commenting can be funny too. Here are some funny code comments
+        people encountered in production code.</p>
+      <p class="single-block">
+        //The below code needs to be commented out.
+      </p>
+      <p class="single-block">
+        // Yesterday I had a scare, <br>
+        // I ran some code that wasn't there, <br>
+        // It wasn't there again today; <br>
+        // Oh, how I wish that it would stay. <br>
+      </p>
+      <p class="single-block">
+        // This is a stupid class that I wrote under duress. I apologize to <br>// all affected. </p>
+      <p class="single-block">
+        return 1; # returns 1
+      </p>
+      <h2>Further reading</h2>
+      <p>Here is a list of resources for further reading up on code reviews</p>
+      <ul>
+        <li><a href="https://medium.com/@sahoosunilkumar/why-code-review-matters-4f12b4aae708">Why Code Review
+            Matters?</a></li>
+        <li><a href="https://betterprogramming.pub/a-junior-developer-explains-code-reviews-dd47693b347e">A Junior
+            Developer Explains Code Reviews</a></li>
+        <li><a href="https://www.backhub.co/blog/best-practices-reviewing-pull-requests-github">Best Practices for
+            Reviewing Pull Requests in GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
